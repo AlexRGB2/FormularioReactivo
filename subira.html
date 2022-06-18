@@ -2,33 +2,54 @@
 <html lang="es">
 
     <head>
-        <title>Articulo</title>
-        <link rel="stylesheet" type="text/css" href="estilos.css">
-    </head>
+        <meta charset="UTF-8" />
+    <title>Articulo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0"/>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+    <link rel="stylesheet" href="estilos.css" />
+<body>
 
-    <body><center>
-<form>
-    <h1><footer> Cargar articulo </footer></h1>
-    <br/>
-    <p>
-        <select name="color">
-            <option>Tipo Subsistema</option>
-          <option>Universidad Tecnologica</option>
+  <form class="formulario">
+    <h1>Cargar Articulo</h1>
+    <div class="contenedor">
+      <div class="input-contenedor">
+        <i class="fas fa-school icon"></i>
+        <select id="archivo">
+          <option>Tipo Subsistema</option>
+          <option>Universidad Tecnológica</option>
           <option>Universidad Politecnica</option>
-          <option>Instito Tecnologico</option>
+          <option>Instituto Tecnológico</option>
         </select>
-     </p><br/>
-   
-    <input type="text" placeholder="Tipo de Articulo">  <br/><br/>
-    <input type="text" placeholder="Autor"> <br/><br/>
-    <input type="text" placeholder="Breve resumen del articulo">  <br/><br/>
-    <input type="text" placeholder="No se eligio ningun archivo">  <br/><br/>
-    <form>
-        <a href="articulo.html">
-            <input type="button" value="Cargar archivo">
-        </a><br/>
+      </div>
 
-</form>
+      <div class="input-contenedor">
+        <i class="fas fa-book icon"></i>
+        <input type="text" placeholder="Título Articulo" />
+      </div>
 
-</body></center>
+      <div class="input-contenedor">
+        <i class="fas fa-user icon"></i>
+        <input type="text" placeholder="Autor" />
+      </div>
+
+      <div class="input-contenedor">
+        <i class="fas fa-book-reader icon"></i>
+        <input type="text" placeholder="Breve Resumen del Articulo" />
+      </div>
+
+      <div class="input-contenedor">
+        <i class="fas fa-file-alt icon"></i>
+        <input id="archivo" type="file"/>
+      </div>
+      <a href="loginvista.html">
+        <input type="button" value="Cargar Archivo" class="button"/>
+      </a>
+    </div>
+  </form>
+
+</body>
 </html>
